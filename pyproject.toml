@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "plot_habit_tracker"
+version = "0.1.0"
+description = "This is a simple tool for plotting a habit tracker on a postcard."
+authors = ["Muti Chung <mutichung@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/mutichung/plot_habit_tracker"
+keywords = ["habit tracking"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+# Add your library dependencies here, e.g.:
+# requests = "^2.25"
+matplotlib = "^3.0"
+typer = "^0.15.0"
+
+[tool.poetry.dev-dependencies]
+# Add any development dependencies here, e.g.:
+# pytest = "^6.2"
+
+[tool.poetry.scripts]
+plot_habit_tracker = "plot_habit_tracker.__init__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
